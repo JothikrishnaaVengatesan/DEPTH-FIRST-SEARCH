@@ -24,7 +24,7 @@ def bfs(graph,start,visited,path):
     visited[start] = True
     while len(queue) != 0:
         tmpnode = queue.popleft()
-         for neighbor in graph[tmpnode]:
+        for neighbor in graph[tmpnode]:
             if not visited[neighbor]:
                 path.append(neighbor)
                 queue.append(neighbor)
